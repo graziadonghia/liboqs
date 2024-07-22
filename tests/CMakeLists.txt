@@ -120,6 +120,9 @@ target_link_libraries(test_sig PRIVATE ${TEST_DEPS})
 add_executable(test_sig_mem test_sig_mem.c)
 target_link_libraries(test_sig_mem PRIVATE ${TEST_DEPS})
 
+add_executable(test_liboqs test_liboqs.c)
+target_link_libraries(test_liboqs oqs)
+
 add_executable(speed_sig speed_sig.c)
 target_link_libraries(speed_sig PRIVATE ${TEST_DEPS})
 
